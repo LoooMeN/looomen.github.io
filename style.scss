@@ -5,9 +5,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body {
     scroll-behavior: smooth;
 }
 
@@ -19,6 +16,10 @@ section {
     width: $desktop-content;
     margin: auto;
     padding-bottom: 152px;
+
+    &::before {
+        content: ''; display: block; position: relative; width: 0; height: 30px; margin-top: 30px;
+    }
 }
 
 .title-wrapper {
@@ -371,6 +372,10 @@ section {
 
 .examples-wrapper {
     border-bottom: 1px solid $color-black;
+
+    &::before {
+        content: ''; display: block; position: relative; width: 0; height: 110px; margin-top: 110px;
+    }
 }
 
 .cooperation-wrapper {
@@ -510,6 +515,10 @@ section {
 }
 
 .faq-wrapper {
+    &::before {
+        content: ''; display: block; position: relative; width: 0; height: 110px; margin-top: 110px;
+    }
+
     .faq {
         .faq-items {
             width: 864px;
