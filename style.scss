@@ -1,0 +1,24 @@
+@import "mixins.scss";
+
+* {
+    box-sizing: none;
+    margin: 0;
+    padding: 0;
+}
+
+.spacer {
+    height: 90px;
+}
+
+section {
+    width: $desktop-content;
+    margin: auto;
+}
+
+.header-wrapper {
+    height: 90px;
+
+    .header {
+        
+    }
+}
