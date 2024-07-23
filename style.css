@@ -46,10 +46,6 @@
   padding-bottom: 64px;
   position: static;
 }
-.splide .splide__slide img {
-  width: 100%;
-  height: auto;
-}
 .splide .splide__arrows {
   position: absolute;
   display: flex;
@@ -748,6 +744,10 @@ section {
   height: 100%;
 }
 .form-wrapper .form .form-body form input {
+  font-family: Roboto;
+  color: #0B0B0B;
+  font-size: 20px;
+  line-height: 150%;
   outline: none;
   border: unset;
   border-bottom: 1px solid #0B0B0B;

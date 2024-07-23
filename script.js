@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
-    let accordions = document.querySelectorAll('.faq-item');
+    let accordions = document.querySelectorAll('.faq-question');
     let burger = document.querySelector('#burger');
     let header = document.querySelector('.header-wrapper');
     let mobileMenu = document.querySelector('.mobile-menu');
@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     accordions.forEach((acc) => {
         acc.addEventListener('click', () => {
-            acc.classList.toggle('--open');
+            acc.parentElement.classList.toggle('--open');
         })
     });
 
