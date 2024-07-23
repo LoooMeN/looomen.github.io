@@ -278,6 +278,7 @@ section {
   font-size: 92px;
   line-height: 110%;
   font-weight: 600;
+  margin-bottom: 16px;
 }
 .hero-wrapper .hero-subtitle {
   font-family: Roboto;
