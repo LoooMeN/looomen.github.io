@@ -585,12 +585,15 @@ section {
   font-size: 18px;
   line-height: 135%;
   font-weight: 500;
+  position: relative;
   padding: 12px 24px;
   color: #FFF;
   background: #0B0B0B;
+  cursor: pointer;
   width: max-content;
   text-decoration: none;
   display: flex;
+  z-index: 2;
   align-items: center;
   gap: 8px;
 }

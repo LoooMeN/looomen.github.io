@@ -452,12 +452,15 @@ section {
             @include t18();
 
             font-weight: 500;
+            position: relative;
             padding: 12px 24px;
             color: $color-white;
             background: $color-black;
+            cursor: pointer;
             width: max-content;
             text-decoration: none;
             display: flex;
+            z-index: 2;
             align-items: center;
             gap: 8px;
         }
