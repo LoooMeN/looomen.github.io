@@ -102,3 +102,9 @@ $mobile-content: 343px;
     0% {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
 }
+
+@keyframes menu {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(90deg); background-image: url("./static/icons/close.svg");}
+    100% {transform: rotate(180deg); background-image: url("./static/icons/close.svg");}
+}

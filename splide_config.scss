@@ -54,14 +54,22 @@
 }
 
 .splide__slide__container {
+    width: 100%;
+
     .splide-video-wrapper {
         position: relative;
         margin-bottom: 24px;
+
+        img {
+            width: 100%;
+        }
         
         .play-button {
             position: absolute;
             top: 50%;
             left: 50%;
+            width: 65px;
+            height: 65px;
             transform: translate(-50%, -50%);
         }
     }
@@ -97,6 +105,14 @@
 
         .team-description {
             @include text-regular();
+        }
+    }
+}
+
+@media (max-width: 1439px) {
+    .splide__slide__container {
+        .splide-video-wrapper {
+            margin-bottom: 16px;
         }
     }
 }
