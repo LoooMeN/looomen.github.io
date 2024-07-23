@@ -4,6 +4,11 @@
     padding-bottom: 64px;
     position: static;
 
+    .splide__slide img {
+        width: 100%;
+        height: auto;
+    }
+
     .splide__arrows {
         position: absolute;
         display: flex;
@@ -113,6 +118,18 @@
     .splide__slide__container {
         .splide-video-wrapper {
             margin-bottom: 16px;
+        }
+    }
+}
+
+@media (max-width: 744px) {
+    .splide {
+        .splide__slide {
+            width: 100%;
+        }
+
+        .splide__pagination {
+            padding: 0;
         }
     }
 }
