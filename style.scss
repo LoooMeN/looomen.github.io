@@ -1201,7 +1201,6 @@ section {
 
         h3 {
             font-size: 44px;
-            word-break: break-all;
         }
 
         &.--big-margin {
@@ -1548,6 +1547,12 @@ section {
 
     .faq-wrapper {
         padding-top: 40px;
+
+        .title-wrapper {
+            h3 {
+                word-break: break-all;
+            }
+        }
 
         .faq {
             .faq-items {
