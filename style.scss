@@ -1165,7 +1165,24 @@ section {
         padding: 32px;
 
         .footer {
-            
+            width: $tablet-content;
+
+            .first-row {
+                .logo-footer {
+                    width: 199px;
+                    height: 34px;
+                }
+
+                .footer-links {
+                    gap: 32px;
+
+                    .links {
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
         }
     }
 }

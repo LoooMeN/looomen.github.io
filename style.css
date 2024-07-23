@@ -1179,4 +1179,17 @@ section::before {
   .footer-wrapper {
     padding: 32px;
   }
+  .footer-wrapper .footer {
+    width: 680px;
+  }
+  .footer-wrapper .footer .first-row .logo-footer {
+    width: 199px;
+    height: 34px;
+  }
+  .footer-wrapper .footer .first-row .footer-links {
+    gap: 32px;
+  }
+  .footer-wrapper .footer .first-row .footer-links .links:last-child {
+    margin-right: 0;
+  }
 }
