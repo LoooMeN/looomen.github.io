@@ -652,6 +652,9 @@ section::before {
   height: 156px;
 }
 
+.faq-wrapper {
+  padding-top: 64px;
+}
 .faq-wrapper::before {
   content: "";
   display: block;
@@ -872,6 +875,7 @@ section::before {
   }
   .title-wrapper {
     margin-bottom: 40px;
+    align-items: flex-start;
   }
   .title-wrapper h3 {
     font-size: 56px;
@@ -1107,5 +1111,72 @@ section::before {
   }
   .cta-target-wrapper .cta-target .orange-drone {
     width: 443px;
+  }
+  .trust-wrapper .trust .trusters {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .trust-wrapper .trust .trusters .truster-logo {
+    width: 96px;
+  }
+  .trust-wrapper .trust .trusters .truster .truster-name {
+    width: auto;
+  }
+  .about-us-wrapper {
+    padding-top: 40px;
+  }
+  .about-us-wrapper .about-us .about-us-text {
+    width: 535px;
+  }
+  .about-us-wrapper .about-us .orange-circle {
+    top: 40px;
+    right: 0;
+    width: 116px;
+    height: 116px;
+  }
+  .faq-wrapper {
+    padding-top: 40px;
+  }
+  .faq-wrapper::before {
+    content: none;
+    display: block;
+    position: relative;
+    width: 0;
+    height: 110px;
+    margin-top: 110px;
+  }
+  .faq-wrapper .faq .faq-items {
+    width: 100%;
+  }
+  .faq-wrapper .faq .faq-items .faq-item {
+    width: 100%;
+    margin-top: 32px;
+  }
+  .faq-wrapper .faq .faq-items .faq-question .faq-question-text {
+    width: 629px;
+  }
+  .form-wrapper .form {
+    flex-direction: column;
+    height: auto;
+  }
+  .form-wrapper .form .form-text {
+    flex-direction: row;
+    margin-bottom: 56px;
+  }
+  .form-wrapper .form .form-text .text-topline {
+    font-size: 18px;
+  }
+  .form-wrapper .form .form-text .contacts {
+    gap: 16px;
+  }
+  .form-wrapper .form .form-text .contacts a {
+    font-size: 24px;
+  }
+  .form-wrapper .form .form-body {
+    width: 100%;
+  }
+  .footer-wrapper {
+    padding: 32px;
   }
 }

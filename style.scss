@@ -535,6 +535,8 @@ section {
 }
 
 .faq-wrapper {
+    padding-top: 64px;
+
     &::before {
         content: ''; display: block; position: relative; width: 0; height: 110px; margin-top: 110px;
     }
@@ -773,6 +775,7 @@ section {
 
     .title-wrapper {
         margin-bottom: 40px;
+        align-items: flex-start;
 
         h3 {
             font-size: 56px;
@@ -1065,6 +1068,104 @@ section {
             .orange-drone {
                 width: 443px;
             }
+        }
+    }
+
+    .trust-wrapper {
+        .trust {
+            .trusters {
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                .truster-logo {
+                    width: 96px;
+                }
+
+                .truster {
+                    .truster-name {
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .about-us-wrapper {
+        padding-top: 40px;
+
+        .about-us {
+            .about-us-text {
+                width: 535px;
+            }
+
+            .orange-circle {
+                top: 40px;
+                right: 0;
+                width: 116px;
+                height: 116px;
+            }
+        }
+    }
+
+    .faq-wrapper {
+        padding-top: 40px;
+
+        &::before {
+            content: none; display: block; position: relative; width: 0; height: 110px; margin-top: 110px;
+        }
+
+        .faq {
+            .faq-items {
+                width: 100%;
+
+                .faq-item {
+                    width: 100%;
+                    margin-top: 32px;
+                }
+
+                .faq-question {
+                    .faq-question-text {
+                        width: 629px;
+                    }
+                }
+            }
+        }
+    }
+
+    .form-wrapper {
+        .form {
+            flex-direction: column;
+            height: auto;
+
+            .form-text {
+                flex-direction: row;
+                margin-bottom: 56px;
+
+                .text-topline {
+                    font-size: 18px;
+                }
+
+                .contacts {
+                    gap: 16px;
+
+                    a {
+                        font-size: 24px;
+                    }
+                }
+            }
+
+            .form-body {
+                width: 100%;
+            }
+        }
+    }
+
+    .footer-wrapper {
+        padding: 32px;
+
+        .footer {
+            
         }
     }
 }
