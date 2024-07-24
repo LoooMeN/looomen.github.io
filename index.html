@@ -729,10 +729,10 @@
                 </div>
             </div>
             <div class="form-body">
-                <form>
-                    <input type="text" placeholder="Ім'я">
-                    <input type="text" placeholder="Телефон">
-                    <input type="text" placeholder="Коментар">
+                <form onsubmit="event.preventDefault(); validateMyForm(this);" id="leadForm">
+                    <input type="text" required name="1" placeholder="Ім'я">
+                    <input type="phone" required name="2" placeholder="Телефон">
+                    <input type="text" name="3" placeholder="Коментар">
                     <button>
                         <p>Зв’язатись з нами</p>
                         <img src="./static/icons/white-diagonal-arrow.svg" alt="White diagonal arrow"

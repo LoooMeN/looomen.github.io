@@ -30,4 +30,47 @@ window.addEventListener('DOMContentLoaded', () => {
     mobileCTA.addEventListener('click', toggleFullscreenMenu);
 
     burger.addEventListener('click', toggleFullscreenMenu);
-})
+});
+
+function validateMyForm(form) {
+    let formData = new FormData(form);
+    const phoneRegex = new RegExp(/^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{2}[\s.-]?\d{2}$/)
+
+    let q1 = formData.get('1');
+    let q2 = formData.get('2');
+    let q3 = formData.get('3') || "";
+
+    if (!phoneRegex.test(q2)) {
+        alert("Будь ласка введіть валідний номер телефону");
+        return;
+    }
+
+    let body = {
+        "poll_id": 1,
+        "question_responses": [
+          {
+            "question_id": 1,
+            "text": q1
+          },
+          {
+            "question_id": 2,
+            "text": q2
+          },
+          {
+            "question_id": 3,
+            "text": q3
+          },
+        ],
+        "metadata": {}
+      }
+
+    fetch("https://tellus-api.innovitive.com/api/public/poll-responses/lead", {
+        method: "POST",
+        header: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(body)
+    })
+    .then(function(res){ form.innerHTML = "<p class='form-success'>Дякуємо за запит, ми звʼяжемося з вами</p>" })
+    .catch(function(data){ console.log("error", JSON.stringify( data ) ) });
+}

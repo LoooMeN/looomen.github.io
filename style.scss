@@ -636,6 +636,18 @@ section {
             height: 100%;
 
             form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                min-height: 290px;
+
+                .form-success {
+                    @include text-regular();
+
+                    color: $color-white;
+                }
+
                 input {
                     @include text-large();
 

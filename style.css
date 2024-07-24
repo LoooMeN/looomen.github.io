@@ -747,6 +747,20 @@ section {
   width: 448px;
   height: 100%;
 }
+.form-wrapper .form .form-body form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 290px;
+}
+.form-wrapper .form .form-body form .form-success {
+  font-family: Roboto;
+  color: #0B0B0B;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFF;
+}
 .form-wrapper .form .form-body form input {
   font-family: Roboto;
   color: #0B0B0B;
