@@ -504,7 +504,7 @@ section {
   gap: 24px;
 }
 .trust-wrapper .trust .trusters .truster .truster-logo {
-  height: 96px;
+  height: 126px;
 }
 .trust-wrapper .trust .trusters .truster .truster-name {
   font-family: Roboto;
@@ -512,7 +512,7 @@ section {
   font-size: 20px;
   line-height: 150%;
   line-height: 30px;
-  width: 296px;
+  width: auto;
 }
 
 .about-us-wrapper {

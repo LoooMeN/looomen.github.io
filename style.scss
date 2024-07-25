@@ -511,14 +511,14 @@ section {
                 gap: 24px;
 
                 .truster-logo {
-                    height: 96px;
+                    height: 126px;
                 }
 
                 .truster-name {
                     @include text-large();
 
                     line-height: 30px;
-                    width: 296px;
+                    width: auto;
                 }
             }
         }
