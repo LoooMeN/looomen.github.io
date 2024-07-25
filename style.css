@@ -172,6 +172,10 @@
   scroll-behavior: smooth;
 }
 
+html {
+  opacity: 1;
+}
+
 body {
   position: relative;
 }
