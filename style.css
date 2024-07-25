@@ -42,9 +42,18 @@
     background-image: url("./static/icons/close.svg");
   }
 }
+.splide__slide {
+  height: 100%;
+}
+.splide__slide img {
+  width: auto;
+  height: 100%;
+}
+
 .splide {
   padding-bottom: 64px;
   position: static;
+  height: 100%;
 }
 .splide .splide__arrows {
   position: absolute;
@@ -113,6 +122,10 @@
 
 #image-slider .splide__track, #image-slider2 .splide__track {
   background-color: #E1DFDD;
+  height: 100%;
+}
+#image-slider .splide__track .splide__list, #image-slider2 .splide__track .splide__list {
+  height: 100%;
 }
 
 .splide__slide__container .splide-team-wrapper .team-name {
@@ -347,6 +360,7 @@ section {
   margin-bottom: 66px;
 }
 .mission-wrapper .first-row .text-wrapper .mission-description {
+  margin-bottom: 12px;
   font-family: Roboto;
   color: #0B0B0B;
   font-size: 20px;
@@ -354,14 +368,13 @@ section {
 }
 .mission-wrapper .first-row .text-wrapper .mission-description.--bold {
   font-weight: 500;
-  margin-top: 12px;
 }
 .mission-wrapper .first-row .monke {
   width: 895px;
 }
 .mission-wrapper .second-row {
   display: flex;
-  justify-content: space-between;
+  gap: 97px;
 }
 .mission-wrapper .second-row .numbers-wrapper .number-text {
   font-family: "Tektur";
@@ -413,27 +426,28 @@ section {
 .product-wrapper {
   padding-top: 64px;
 }
-.product-wrapper.linza-wrapper {
+.product-wrapper.--border {
   border-bottom: 1px solid #0B0B0B;
 }
 .product-wrapper .product {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 592px;
+  height: 630px;
   column-gap: 80px;
   row-gap: 48px;
 }
 .product-wrapper .product .image-slider {
   order: 1;
+  height: 630px;
   width: 672px;
   position: relative;
 }
 .product-wrapper .product .product-description {
   font-family: Roboto;
   color: #0B0B0B;
-  font-size: 16px;
-  line-height: 140%;
+  font-size: 20px;
+  line-height: 150%;
   order: 2;
   width: 560px;
 }
@@ -470,6 +484,13 @@ section {
   font-size: 24px;
   line-height: 110%;
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+.product-wrapper .product .product-characteristics-wrapper .product-characteristics .characteristic .char-text .char-value img {
+  width: 30px;
 }
 .product-wrapper .product .product-characteristics-wrapper .product-buttons {
   display: flex;

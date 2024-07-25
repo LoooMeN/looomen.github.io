@@ -209,11 +209,12 @@ section {
 
         .text-wrapper {
             .mission-description {
+                margin-bottom: 12px;
+
                 @include text-large();
 
                 &.--bold {
                     font-weight: 500;
-                    margin-top: 12px;
                 }
             }
         }
@@ -224,7 +225,8 @@ section {
 
     .second-row {
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
+        gap: 97px;
 
         .numbers-wrapper {
             .number-text {
@@ -278,7 +280,7 @@ section {
 .product-wrapper {
     padding-top: 64px;
 
-    &.linza-wrapper {
+    &.--border {
         border-bottom: 1px solid $color-black;
     }
 
@@ -286,18 +288,19 @@ section {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        height: 592px;
+        height: 630px;
         column-gap: 80px;
         row-gap: 48px;
 
         .image-slider {
             order: 1;
+            height: 630px;
             width: 672px;
             position: relative;
         }
 
         .product-description {
-            @include text-regular();
+            @include text-large();
 
             order: 2;
             width: 560px;
@@ -334,6 +337,14 @@ section {
                             @include head6();
                             
                             font-weight: 600;
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+                            text-decoration: none;
+
+                            img {
+                                width: 30px;
+                            }
                         }
                     }
                 }
