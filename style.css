@@ -955,6 +955,9 @@ section {
     column-gap: 77px;
     row-gap: 24px;
   }
+  .product-wrapper .product .product-characteristics-wrapper .product-characteristics .characteristic .char-text .char-value {
+    align-items: flex-start;
+  }
   .product-wrapper .product .product-characteristics-wrapper .product-buttons {
     gap: 24px;
   }
@@ -1008,12 +1011,14 @@ section {
     width: 443px;
   }
   .trust-wrapper .trust .trusters {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
+    flex-wrap: wrap;
   }
-  .trust-wrapper .trust .trusters .truster-logo {
-    width: 96px;
+  .trust-wrapper .trust .trusters .truster {
+    min-width: 40%;
+    flex-direction: column;
   }
   .trust-wrapper .trust .trusters .truster .truster-name {
     width: auto;
@@ -1274,7 +1279,7 @@ section {
   .product-wrapper .product .image-slider {
     order: 2;
     width: 100%;
-    height: auto;
+    height: 300px;
   }
   .product-wrapper .product .product-characteristics-wrapper {
     order: 3;
@@ -1339,17 +1344,8 @@ section {
   .trust-wrapper {
     padding-top: 32px;
   }
-  .trust-wrapper .trust .trusters {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
   .trust-wrapper .trust .trusters .truster .truster-name {
     width: auto;
-  }
-  .trust-wrapper .trust .trusters .truster .truster-logo {
-    width: 62px;
-    height: 62px;
   }
   .about-us-wrapper {
     padding-top: 32px;
