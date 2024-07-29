@@ -1025,6 +1025,14 @@ section {
                     grid-template-columns: 1fr 1fr;
                     column-gap: 77px;
                     row-gap: 24px;
+
+                    .characteristic {
+                        .char-text {
+                            .char-value {
+                                align-items: flex-start;
+                            }
+                        }
+                    }
                 }
 
                 .product-buttons {
@@ -1104,15 +1112,19 @@ section {
     .trust-wrapper {
         .trust {
             .trusters {
-                flex-direction: column;
+                flex-direction: row;
                 justify-content: flex-start;
                 align-items: flex-start;
-
-                .truster-logo {
-                    width: 96px;
-                }
+                flex-wrap: wrap;
 
                 .truster {
+                    min-width: 40%;
+                    flex-direction: column;
+
+                    .truster-logo {
+                        // width: 96px;
+                    }
+
                     .truster-name {
                         width: auto;
                     }
@@ -1452,7 +1464,7 @@ section {
             .image-slider {
                 order: 2;
                 width: 100%;
-                height: auto;
+                height: 300px;
             }
 
             .product-characteristics-wrapper {
@@ -1538,9 +1550,9 @@ section {
 
         .trust {
             .trusters {
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items: flex-start;
+                // flex-direction: column;
+                // justify-content: flex-start;
+                // align-items: flex-start;
 
                 .truster {
                     .truster-name {
@@ -1548,8 +1560,8 @@ section {
                     }
 
                     .truster-logo {
-                        width: 62px;
-                        height: 62px;
+                        // width: 62px;
+                        // height: 62px;
                     }
                 }
             }
