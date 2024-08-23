@@ -92,6 +92,22 @@ section {
   align-items: center;
   justify-content: space-between;
 }
+.header-wrapper .header .menu-add-wrapper {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.header-wrapper .header .menu-add-wrapper .lang-switch {
+  font-family: Roboto;
+  color: #0B0B0B;
+  font-size: 18px;
+  line-height: 140%;
+  text-decoration: none;
+  transition: color 0.4s;
+}
+.header-wrapper .header .menu-add-wrapper .lang-switch:hover {
+  color: #7C7C7C;
+}
 .header-wrapper .header .mobile-burger, .header-wrapper .header .mobile-menu {
   display: none;
 }
@@ -588,6 +604,9 @@ section {
   transition: max-height 0.2s ease-out;
 }
 
+.form-wrapper {
+  border-bottom: 1px solid #0B0B0B;
+}
 .form-wrapper .form {
   width: 100%;
   height: 402px;
@@ -686,6 +705,86 @@ section {
 .form-wrapper .form .form-body form button img {
   width: 16px;
   height: 16px;
+}
+
+.vacancies-wrapper {
+  padding-top: 64px;
+}
+.vacancies-wrapper .vacancies {
+  width: 100%;
+}
+.vacancies-wrapper .vacancies .vacancies-list {
+  width: 864px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: auto;
+  margin-bottom: 64px;
+}
+.vacancies-wrapper .vacancies .vacancies-list .vacancy {
+  padding: 16px 0;
+  display: flex;
+  border-bottom: 1px solid #E1DFDD;
+  justify-content: space-between;
+  text-decoration: none;
+  cursor: pointer;
+}
+.vacancies-wrapper .vacancies .vacancies-list .vacancy img {
+  width: 32px;
+  height: 32px;
+}
+.vacancies-wrapper .vacancies .vacancies-list .vacancy .vacancy-info .vacancy-title {
+  font-family: Roboto;
+  color: #0B0B0B;
+  font-size: 18px;
+  line-height: 140%;
+  color: #0B0B0B;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.vacancies-wrapper .vacancies .vacancies-list .vacancy .vacancy-info .vacancy-description {
+  font-family: Roboto;
+  color: #0B0B0B;
+  font-size: 14px;
+  line-height: 140%;
+  color: #7C7C7C;
+  max-width: 528px;
+}
+.vacancies-wrapper .vacancies .vacancies-cta-box {
+  padding: 32px;
+  width: 864px;
+  background-color: #FF5E2A;
+  display: flex;
+  gap: 56px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+.vacancies-wrapper .vacancies .vacancies-cta-box .wave {
+  position: absolute;
+  top: -42px;
+  left: -46px;
+}
+.vacancies-wrapper .vacancies .vacancies-cta-box .square {
+  width: 62px;
+  height: 62px;
+}
+.vacancies-wrapper .vacancies .vacancies-cta-box .cta-text .cta-question {
+  font-family: Roboto;
+  color: #0B0B0B;
+  font-size: 20px;
+  line-height: 150%;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.vacancies-wrapper .vacancies .vacancies-cta-box .cta-text .cta-action {
+  font-family: Roboto;
+  color: #0B0B0B;
+  font-size: 18px;
+  line-height: 140%;
+}
+.vacancies-wrapper .vacancies .vacancies-cta-box .cta-text .cta-action span {
+  font-weight: 600;
 }
 
 .footer-wrapper {
@@ -825,6 +924,18 @@ section {
     transition: bottom 0.3s ease-in;
     padding-top: 16px;
   }
+  .header-wrapper .header .mobile-menu .lang-switch {
+    font-family: Roboto;
+    color: #0B0B0B;
+    font-size: 18px;
+    line-height: 140%;
+    text-decoration: none;
+    color: #FFF;
+    transition: color 0.4s;
+  }
+  .header-wrapper .header .mobile-menu .lang-switch:hover {
+    color: #7C7C7C;
+  }
   .header-wrapper .header .mobile-menu .menu {
     width: 680px;
     margin: 24px auto;
@@ -882,7 +993,7 @@ section {
     width: 164px;
     height: 28px;
   }
-  .header-wrapper .header .menu, .header-wrapper .header .header-cta {
+  .header-wrapper .header .menu, .header-wrapper .header .menu-add-wrapper {
     display: none;
   }
   .hero-wrapper {
@@ -1068,6 +1179,16 @@ section {
   }
   .form-wrapper .form .form-body {
     width: 100%;
+  }
+  .vacancies-wrapper .vacancies .vacancies-list {
+    width: 680px;
+  }
+  .vacancies-wrapper .vacancies .vacancies-list .vacancy img {
+    width: 24px;
+    height: 24px;
+  }
+  .vacancies-wrapper .vacancies .vacancies-cta-box {
+    width: 680px;
   }
   .footer-wrapper {
     padding: 32px;
@@ -1396,6 +1517,17 @@ section {
   }
   .form-wrapper .form .form-body {
     width: 100%;
+  }
+  .vacancies-wrapper .vacancies .vacancies-list {
+    width: 100%;
+  }
+  .vacancies-wrapper .vacancies .vacancies-list .vacancy img {
+    width: 18px;
+    height: 18px;
+  }
+  .vacancies-wrapper .vacancies .vacancies-cta-box {
+    width: 100%;
+    flex-direction: column;
   }
   .footer-wrapper {
     padding: 32px;
