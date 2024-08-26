@@ -456,7 +456,7 @@ section {
   position: relative;
   overflow: hidden;
   background: #FF5E2A;
-  height: 396px;
+  min-height: 396px;
 }
 .cta-target-wrapper .cta-target .cta-title {
   font-family: "Tektur";

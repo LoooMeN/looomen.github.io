@@ -465,7 +465,7 @@ section {
         position: relative;
         overflow: hidden;
         background: $color-red;
-        height: 396px;
+        min-height: 396px;
 
         .cta-title {
             @include head2();
