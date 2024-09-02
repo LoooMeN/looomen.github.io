@@ -555,6 +555,7 @@ section {
 
 .faq-wrapper {
   padding-top: 64px;
+  border-bottom: 1px solid #0B0B0B;
 }
 .faq-wrapper .faq .faq-items {
   width: 864px;
