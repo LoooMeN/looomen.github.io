@@ -860,6 +860,29 @@ section {
   height: 24px;
 }
 
+.fortifications .hero-wrapper {
+  display: flex;
+}
+.fortifications .mission-wrapper .first-row {
+  justify-content: space-around;
+}
+.fortifications .mission-wrapper .first-row .text-wrapper {
+  max-width: 50%;
+}
+.fortifications .mission-wrapper .first-row .monke {
+  max-width: 30%;
+}
+.fortifications .cooperation-wrapper .cooperation .coop-item .coop-number {
+  flex-shrink: 0;
+  min-width: 240px;
+}
+.fortifications .cta-target-wrapper .cta-target .cta-button {
+  font-size: 70px;
+}
+.fortifications .cta-target-wrapper .cta-target .cta-button .cta-button-arrow {
+  height: 70px;
+}
+
 @media (max-width: 1439px) {
   html {
     scroll-padding-top: 80px;
@@ -1207,6 +1230,36 @@ section {
   }
   .footer-wrapper .footer .first-row .footer-links .links:last-child {
     margin-right: 0;
+  }
+  .fortifications .hero-wrapper {
+    flex-direction: column;
+  }
+  .fortifications .hero-wrapper .right {
+    display: flex;
+    justify-content: center;
+  }
+  .fortifications .mission-wrapper .first-row {
+    justify-content: space-around;
+  }
+  .fortifications .mission-wrapper .first-row .text-wrapper {
+    max-width: unset;
+  }
+  .fortifications .mission-wrapper .first-row .text-wrapper .mission-description {
+    width: 100%;
+  }
+  .fortifications .mission-wrapper .first-row .monke {
+    max-width: 50%;
+    margin: auto;
+  }
+  .fortifications .cooperation-wrapper .cooperation .coop-item .coop-number {
+    flex-shrink: 0;
+    min-width: 240px;
+  }
+  .fortifications .cta-target-wrapper .cta-target .cta-button {
+    font-size: 70px;
+  }
+  .fortifications .cta-target-wrapper .cta-target .cta-button .cta-button-arrow {
+    height: 70px;
   }
 }
 @media (max-width: 744px) {
@@ -1558,5 +1611,51 @@ section {
   }
   .footer-wrapper .footer .second-row .socials {
     order: 1;
+  }
+  .fortifications .hero-wrapper {
+    flex-direction: column;
+  }
+  .fortifications .hero-wrapper .left h1 {
+    font-size: 50px;
+  }
+  .fortifications .hero-wrapper .right {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .fortifications .hero-wrapper .right img {
+    width: 80%;
+  }
+  .fortifications .mission-wrapper .first-row {
+    justify-content: space-around;
+  }
+  .fortifications .mission-wrapper .first-row .text-wrapper {
+    max-width: unset;
+  }
+  .fortifications .mission-wrapper .first-row .text-wrapper .mission-description {
+    width: 100%;
+  }
+  .fortifications .mission-wrapper .first-row .monke {
+    max-width: 80%;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .fortifications .cooperation-wrapper .cooperation .coop-item {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .fortifications .cooperation-wrapper .cooperation .coop-item .coop-number {
+    flex-shrink: 0;
+    min-width: 240px;
+  }
+  .fortifications .cta-target-wrapper .cta-target {
+    height: unset;
+  }
+  .fortifications .cta-target-wrapper .cta-target .cta-button {
+    font-size: 30px;
+    margin: auto;
+  }
+  .fortifications .cta-target-wrapper .cta-target .cta-button .cta-button-arrow {
+    height: 30px;
   }
 }

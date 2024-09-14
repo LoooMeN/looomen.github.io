@@ -896,6 +896,49 @@ section {
     }
 }
 
+.fortifications {
+    .hero-wrapper {
+        display: flex;
+    }
+
+    .mission-wrapper {
+        .first-row {
+            justify-content: space-around;
+
+            .text-wrapper {
+                max-width: 50%;
+            }
+
+            .monke {
+                max-width: 30%;
+            }
+        }
+    }
+
+    .cooperation-wrapper {
+        .cooperation {
+            .coop-item {
+                .coop-number {
+                    flex-shrink: 0;
+                    min-width: 240px;
+                }
+            }
+        }
+    }
+
+    .cta-target-wrapper {
+        .cta-target {
+            .cta-button {
+                font-size: 70px;
+
+                .cta-button-arrow {
+                    height: 70px;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 1439px) {
 
     html {
@@ -1358,6 +1401,59 @@ section {
                         &:last-child {
                             margin-right: 0;
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    .fortifications {
+        .hero-wrapper {
+            flex-direction: column;
+            
+            .right {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    
+        .mission-wrapper {
+            .first-row {
+                justify-content: space-around;
+    
+                .text-wrapper {
+                    max-width: unset;
+
+                    .mission-description {
+                        width: 100%;
+                    }
+                }
+    
+                .monke {
+                    max-width: 50%;
+                    margin: auto;
+                }
+            }
+        }
+    
+        .cooperation-wrapper {
+            .cooperation {
+                .coop-item {
+                    .coop-number {
+                        flex-shrink: 0;
+                        min-width: 240px;
+                    }
+                }
+            }
+        }
+    
+        .cta-target-wrapper {
+            .cta-target {
+                .cta-button {
+                    font-size: 70px;
+    
+                    .cta-button-arrow {
+                        height: 70px;
                     }
                 }
             }
@@ -1830,6 +1926,77 @@ section {
 
                 .socials {
                     order: 1;
+                }
+            }
+        }
+    }
+
+    .fortifications {
+        .hero-wrapper {
+            flex-direction: column;
+
+            .left {
+                h1 {
+                    font-size: 50px;
+                }
+            }
+            
+            .right {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+
+                img {
+                    width: 80%;
+                }
+            }
+        }
+    
+        .mission-wrapper {
+            .first-row {
+                justify-content: space-around;
+    
+                .text-wrapper {
+                    max-width: unset;
+
+                    .mission-description {
+                        width: 100%;
+                    }
+                }
+    
+                .monke {
+                    max-width: 80%;
+                    margin: auto;
+                    margin-top: 20px;
+                }
+            }
+        }
+    
+        .cooperation-wrapper {
+            .cooperation {
+                .coop-item {
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .coop-number {
+                        flex-shrink: 0;
+                        min-width: 240px;
+                    }
+                }
+            }
+        }
+    
+        .cta-target-wrapper {
+            .cta-target {
+                height: unset;
+
+                .cta-button {
+                    font-size: 30px;
+                    margin: auto;
+    
+                    .cta-button-arrow {
+                        height: 30px;
+                    }
                 }
             }
         }
