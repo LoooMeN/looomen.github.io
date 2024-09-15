@@ -862,6 +862,16 @@ section {
 
 .fortifications .hero-wrapper {
   display: flex;
+  gap: 60px;
+}
+.fortifications .hero-wrapper .left h1 {
+  background-color: #C1C1C1;
+}
+.fortifications .hero-wrapper .left .hero-subtitle {
+  background-color: #C1C1C1;
+  width: max-content;
+  max-width: 100%;
+  padding: 10px;
 }
 .fortifications .mission-wrapper .first-row {
   justify-content: space-around;
@@ -869,18 +879,37 @@ section {
 .fortifications .mission-wrapper .first-row .text-wrapper {
   max-width: 50%;
 }
+.fortifications .mission-wrapper .first-row .text-wrapper .mission-description {
+  max-width: 80%;
+}
+.fortifications .mission-wrapper .first-row .text-wrapper .mission-description.--push {
+  margin-left: 100px;
+}
 .fortifications .mission-wrapper .first-row .monke {
   max-width: 30%;
 }
 .fortifications .cooperation-wrapper .cooperation .coop-item .coop-number {
   flex-shrink: 0;
   min-width: 240px;
+  color: black;
+  background-color: #C1C1C1;
+  height: max-content;
+  padding: 5px;
+}
+.fortifications .cta-target-wrapper .cta-target {
+  background-color: unset;
+  min-height: unset;
+  display: flex;
+  justify-content: center;
 }
 .fortifications .cta-target-wrapper .cta-target .cta-button {
   font-size: 70px;
 }
 .fortifications .cta-target-wrapper .cta-target .cta-button .cta-button-arrow {
   height: 70px;
+}
+.fortifications .cta-target-wrapper .cta-target .orange-bg, .fortifications .cta-target-wrapper .cta-target .orange-drone {
+  display: none;
 }
 
 @media (max-width: 1439px) {

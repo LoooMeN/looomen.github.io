@@ -899,6 +899,20 @@ section {
 .fortifications {
     .hero-wrapper {
         display: flex;
+        gap: 60px;
+
+        .left {
+            h1 {
+                background-color: #C1C1C1;
+            }
+
+            .hero-subtitle {
+                background-color: #C1C1C1;
+                width: max-content;
+                max-width: 100%;
+                padding: 10px;
+            }
+        }
     }
 
     .mission-wrapper {
@@ -907,6 +921,14 @@ section {
 
             .text-wrapper {
                 max-width: 50%;
+
+                .mission-description {
+                    max-width: 80%;
+
+                    &.--push {
+                        margin-left: 100px;
+                    }
+                }
             }
 
             .monke {
@@ -921,6 +943,10 @@ section {
                 .coop-number {
                     flex-shrink: 0;
                     min-width: 240px;
+                    color: black;
+                    background-color: #C1C1C1;
+                    height: max-content;
+                    padding: 5px;
                 }
             }
         }
@@ -928,12 +954,21 @@ section {
 
     .cta-target-wrapper {
         .cta-target {
+            background-color: unset;
+            min-height: unset;
+            display: flex;
+            justify-content: center;
+
             .cta-button {
                 font-size: 70px;
 
                 .cta-button-arrow {
                     height: 70px;
                 }
+            }
+
+            .orange-bg, .orange-drone {
+                display: none;
             }
         }
     }
