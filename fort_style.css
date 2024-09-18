@@ -48,8 +48,8 @@
 .fortifications .hero-wrapper .hero-fort-wrapper .left h1 {
   font-size: 200px;
   opacity: 0;
-  animation: show-text 2s forwards;
-  animation-delay: 6s;
+  animation: show-text 1.5s forwards;
+  animation-delay: 4.5s;
 }
 .fortifications .hero-wrapper .hero-fort-wrapper .left .hero-subtitle {
   width: 50%;
@@ -76,26 +76,26 @@
   top: 0;
   left: 36px;
   z-index: 1;
-  animation-delay: 1s;
+  animation-delay: 0.4s;
 }
 .fortifications .hero-wrapper .hero-fort-wrapper .right .fort-image-wrapper .fort-2 {
   top: 11px;
   left: 24px;
   z-index: 2;
-  animation-delay: 1.4s;
+  animation-delay: 0.8s;
 }
 .fortifications .hero-wrapper .hero-fort-wrapper .right .fort-image-wrapper .fort-3 {
   top: 22px;
   left: 12px;
   z-index: 3;
-  animation-delay: 1.8s;
+  animation-delay: 1.2s;
 }
 .fortifications .hero-wrapper .hero-fort-wrapper .right .fort-image-wrapper .fort-4 {
   top: 33px;
   left: 0;
   z-index: 4;
-  animation-delay: 2.7s;
-  animation-duration: 3s;
+  animation-delay: 1.8s;
+  animation-duration: 2.5s;
 }
 
 @media (max-width: 1439px) {
