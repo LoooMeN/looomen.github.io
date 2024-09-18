@@ -864,14 +864,23 @@ section {
   display: flex;
   gap: 60px;
 }
+.fortifications .hero-wrapper .hero-fort-wrapper {
+  display: flex;
+  gap: 60px;
+  margin: auto;
+  align-items: center;
+}
 .fortifications .hero-wrapper .left h1 {
   background-color: #C1C1C1;
+  text-transform: none;
+  font-size: 144px;
 }
 .fortifications .hero-wrapper .left .hero-subtitle {
   background-color: #C1C1C1;
   width: max-content;
   max-width: 100%;
   padding: 10px;
+  margin: 0;
 }
 .fortifications .mission-wrapper .first-row {
   justify-content: space-around;
@@ -895,6 +904,12 @@ section {
   background-color: #C1C1C1;
   height: max-content;
   padding: 5px;
+}
+.fortifications .cooperation-wrapper .cooperation .coop-item .coop-text p {
+  margin: 10px 0;
+}
+.fortifications .cooperation-wrapper .cooperation .coop-item .coop-text ul {
+  list-style-position: inside;
 }
 .fortifications .cta-target-wrapper .cta-target {
   background-color: unset;
@@ -1260,7 +1275,7 @@ section {
   .footer-wrapper .footer .first-row .footer-links .links:last-child {
     margin-right: 0;
   }
-  .fortifications .hero-wrapper {
+  .fortifications .hero-wrapper .hero-fort-wrapper {
     flex-direction: column;
   }
   .fortifications .hero-wrapper .right {

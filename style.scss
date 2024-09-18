@@ -901,9 +901,18 @@ section {
         display: flex;
         gap: 60px;
 
+        .hero-fort-wrapper {
+            display: flex;
+            gap: 60px;
+            margin: auto;
+            align-items: center;
+        }
+
         .left {
             h1 {
                 background-color: #C1C1C1;
+                text-transform: none;
+                font-size: 144px;
             }
 
             .hero-subtitle {
@@ -911,6 +920,7 @@ section {
                 width: max-content;
                 max-width: 100%;
                 padding: 10px;
+                margin: 0;
             }
         }
     }
@@ -947,6 +957,16 @@ section {
                     background-color: #C1C1C1;
                     height: max-content;
                     padding: 5px;
+                }
+
+                .coop-text {
+                    p {
+                        margin: 10px 0;
+                    }
+
+                    ul {
+                        list-style-position: inside;
+                    }
                 }
             }
         }
@@ -1444,7 +1464,10 @@ section {
 
     .fortifications {
         .hero-wrapper {
-            flex-direction: column;
+
+            .hero-fort-wrapper {
+                flex-direction: column;
+            }
             
             .right {
                 display: flex;
