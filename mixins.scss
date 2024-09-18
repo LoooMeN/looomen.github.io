@@ -5,6 +5,7 @@ $color-red: #FF5E2A;
 $color-gray: #7C7C7C;
 $color-light: #E1DFDD;
 $color-white: #FFF;
+$color-fort-gray: #C1C1C1;
 
 $desktop-content: 1312px;
 $tablet-content: 680px;
@@ -40,7 +41,7 @@ $mobile-content: 343px;
 
     font-size: 64px;
     line-height: 110%;
-}
+} 
 
 @mixin head4 {
     @include tektur();

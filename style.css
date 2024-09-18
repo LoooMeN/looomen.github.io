@@ -81,7 +81,7 @@ section {
   align-items: center;
   justify-content: center;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   background: #FFF;
   z-index: 100;
   padding-bottom: unset;
@@ -1666,9 +1666,6 @@ section {
     display: flex;
     width: 100%;
     justify-content: center;
-  }
-  .fortifications .hero-wrapper .right img {
-    width: 80%;
   }
   .fortifications .mission-wrapper .first-row {
     justify-content: space-around;

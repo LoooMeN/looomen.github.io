@@ -65,7 +65,7 @@ section {
     align-items: center;
     justify-content: center;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     background: $color-white;
     z-index: 100;
     padding-bottom: unset;
@@ -2004,9 +2004,9 @@ section {
                 width: 100%;
                 justify-content: center;
 
-                img {
-                    width: 80%;
-                }
+                // img {
+                //     width: 80%;
+                // }
             }
         }
     
