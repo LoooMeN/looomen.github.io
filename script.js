@@ -46,29 +46,32 @@ function validateMyForm(form) {
     }
 
     let body = {
-        "board_id": 1,
-        "fields": [
+        board_id: 1,
+        fields: [
           {
-            "board_field_id": 1,
-            "value": q1
+            board_field_id: 1,
+            value: q1
           },
           {
-            "board_field_id": 2,
-            "value": q2
+            board_field_id: 2,
+            value: q2
           },
           {
-            "board_field_id": 3,
-            "value": q3
+            board_field_id: 3,
+            value: q3
           },
         ]
       }
 
     fetch("https://tellus-api.innovitive.com/api/v1/public/form/", {
         method: "POST",
-        header: {
+        headers: {
+            "accept": "application/json",
             "content-type": "application/json",
         },
-        mode: 'cors',
+        mode: "cors",
+        credentials: "omit",
+        referrerPolicy: "strict-origin-when-cross-origin",
         body: JSON.stringify(body)
     })
     .then(function(res){ form.innerHTML = "<p class='form-success'>Дякуємо за запит, ми звʼяжемося з вами</p>" })
