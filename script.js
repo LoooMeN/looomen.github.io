@@ -63,7 +63,7 @@ function validateMyForm(form) {
         ]
       }
 
-    fetch("https://tellus-api.innovitive.com/api/v1/public/form/", {
+    fetch("https://api-stage.tellus.in.ua/api/v1/public/form/", {
         method: "POST",
         headers: {
             "accept": "application/json",
