@@ -325,14 +325,66 @@ section {
         border-bottom: 1px solid $color-black;
     }
 
+    .product-characteristics-wrapper {
+        width: 100%;
+        
+        .product-characteristics {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 15px;
+            margin-bottom: 64px;
+
+            .characteristic {
+                display: flex;
+
+                .char-icon {
+                    color: $color-red;
+                    width: 48px;
+                    height: 48px;
+                    margin-right: 8px;
+                }
+
+                .char-text {
+                    .char-key {
+                        @include text-small();
+
+                        line-height: 24px;
+                        text-transform: uppercase;
+                    }
+
+                    .char-value {
+                        @include head6();
+                        
+                        font-weight: 600;
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        text-decoration: none;
+
+                        img {
+                            width: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .product {
         display: flex;
-        flex-wrap: wrap;
-        column-gap: 80px;
-        row-gap: 48px;
+        column-gap: 40px;
+
+        .left {
+            order: 1;
+            width: 60%;
+        }
+
+        .right {
+            order: 2;
+            width: 40%;
+        }
 
         .image-slider {
-            order: 1;
             height: 630px;
             width: 672px;
             position: relative;
@@ -341,99 +393,45 @@ section {
         .product-description {
             @include text-large();
 
-            order: 2;
-            width: 560px;
+            width: 100%;
             margin-bottom: 20px;
         }
 
-        .product-characteristics-wrapper {
-            order: 3;
-            
-            .product-characteristics {
-                display: flex;
-                flex-direction: column;
-                gap: 24px;
-                margin-bottom: 64px;
+        .product-buttons {
+            display: flex;
+            gap: 16px;
 
-                .characteristic {
-                    display: flex;
+            .button-tth {
+                @include t18();
 
-                    .char-icon {
-                        color: $color-red;
-                        width: 48px;
-                        height: 48px;
-                        margin-right: 8px;
-                    }
-
-                    .char-text {
-                        .char-key {
-                            @include text-small();
-
-                            line-height: 24px;
-                            text-transform: uppercase;
-                        }
-
-                        .char-value {
-                            @include head6();
-                            
-                            font-weight: 600;
-                            display: flex;
-                            align-items: center;
-                            gap: 5px;
-                            text-decoration: none;
-
-                            img {
-                                width: 30px;
-                            }
-                        }
-                    }
-                }
+                font-weight: 500;
+                text-decoration: none;
+                color: $color-black;
+                padding: 12px 24px;
+                border: 1px solid #E1DFDD;
             }
 
-            .product-buttons {
+            .button-order {
+                @include t18();
+
+                text-decoration: none;
+                color: $color-white;
                 display: flex;
-                gap: 16px;
-
-                .button-tth {
-                    @include t18();
-
-                    font-weight: 500;
-                    text-decoration: none;
-                    color: $color-black;
-                    padding: 12px 24px;
-                    border: 1px solid #E1DFDD;
-                }
-
-                .button-order {
-                    @include t18();
-
-                    text-decoration: none;
-                    color: $color-white;
-                    display: flex;
-                    background: $color-black;
-                    align-items: center;
-                    padding: 12px 24px;
-                    gap: 8px;
-                    
-                    .button-order-arrow {
-                        width: 16px;
-                        height: 16px;
-                    }
+                background: $color-black;
+                align-items: center;
+                padding: 12px 24px;
+                gap: 8px;
+                
+                .button-order-arrow {
+                    width: 16px;
+                    height: 16px;
                 }
             }
         }
 
         &.--right {
-            .image-slider {
+            .left {
                 order: 3;
-            }
-
-            .product-description {
-                order: 1;
-            }
-
-            .product-characteristics-wrapper {
-                order: 2;
             }
         }
     }
@@ -1203,6 +1201,20 @@ section {
                 }
             }
         }
+
+        .media-about-us {
+            margin: 40px 0;
+    
+            .media-list {
+                display: grid;
+                grid-template-columns:  1fr 1fr;
+                gap: 30px;
+    
+                .media {
+                    height: 50px;
+                }
+            }
+        }
     }
 
     .mission-wrapper {
@@ -1238,9 +1250,23 @@ section {
     .product-wrapper {
         padding-top: 40px;
 
+        .product-characteristics-wrapper {
+            .product-characteristics {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
         .product {
             flex-direction: column;
             height: auto;
+
+            .left, .right {
+                width: 100%;
+            }
+
+            .left {
+                margin-bottom: 20px;
+            }
 
             .product-description {
                 order: 1;
@@ -1283,16 +1309,12 @@ section {
             }
 
             &.--right {
-                .image-slider {
+                .right {
                     order: 2;
                 }
-    
-                .product-description {
+
+                .left {
                     order: 1;
-                }
-    
-                .product-characteristics-wrapper {
-                    order: 3;
                 }
             }
         }
@@ -1348,18 +1370,15 @@ section {
     .trust-wrapper {
         .trust {
             .trusters {
-                flex-direction: row;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
                 justify-content: flex-start;
                 align-items: flex-start;
                 flex-wrap: wrap;
 
                 .truster {
-                    min-width: 40%;
+                    width: calc(50% - 12px);
                     flex-direction: column;
-
-                    .truster-logo {
-                        // width: 96px;
-                    }
 
                     .truster-name {
                         width: auto;
@@ -1713,6 +1732,20 @@ section {
                 }
             }
         }
+
+        .media-about-us {
+            margin: 20px 0;
+    
+            .media-list {
+                display: grid;
+                grid-template-columns:  1fr 1fr;
+                gap: 30px;
+    
+                .media {
+                    height: 30px;
+                }
+            }
+        }
     }
 
     .mission-wrapper {
@@ -1761,6 +1794,12 @@ section {
 
     .product-wrapper {
         padding-top: 32px;
+
+        .product-characteristics-wrapper {
+            .product-characteristics {
+                grid-template-columns: 1fr;
+            }
+        }
 
         .product {
             flex-direction: column;
@@ -1861,11 +1900,9 @@ section {
 
         .trust {
             .trusters {
-                // flex-direction: column;
-                // justify-content: flex-start;
-                // align-items: flex-start;
-
                 .truster {
+                    width: 100%;
+
                     .truster-name {
                         width: auto;
                     }

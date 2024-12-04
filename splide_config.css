@@ -98,11 +98,11 @@
   font-weight: 500;
 }
 
-#image-slider .splide__track, #image-slider2 .splide__track {
+#image-slider .splide__track, #image-slider2 .splide__track, .sliderr .splide__track {
   background-color: #E1DFDD;
   height: 100%;
 }
-#image-slider .splide__track .splide__list, #image-slider2 .splide__track .splide__list {
+#image-slider .splide__track .splide__list, #image-slider2 .splide__track .splide__list, .sliderr .splide__track .splide__list {
   height: 100%;
 }
 
