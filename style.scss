@@ -48,6 +48,12 @@ section {
         font-weight: 600;
     }
 
+    h4 {
+        @include head3();
+
+        font-size: 22px;
+    }
+
     &.--no-arrow {
         img {
             display: none;
@@ -219,6 +225,19 @@ section {
             }
         }
     }
+
+    .media-about-us {
+        margin: 40px 0;
+
+        .media-list {
+            display: flex;
+            justify-content: space-between;
+
+            .media {
+                height: 50px;
+            }
+        }
+    }
 }
 
 .mission-wrapper {
@@ -308,9 +327,7 @@ section {
 
     .product {
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
-        height: 630px;
         column-gap: 80px;
         row-gap: 48px;
 
@@ -326,6 +343,7 @@ section {
 
             order: 2;
             width: 560px;
+            margin-bottom: 20px;
         }
 
         .product-characteristics-wrapper {

@@ -68,6 +68,14 @@ section {
   line-height: 110%;
   font-weight: 600;
 }
+.title-wrapper h4 {
+  font-family: "Tektur";
+  color: #0B0B0B;
+  text-transform: uppercase;
+  font-size: 64px;
+  line-height: 110%;
+  font-size: 22px;
+}
 .title-wrapper.--no-arrow img {
   display: none;
 }
@@ -226,6 +234,16 @@ section {
   width: 58px;
   height: 58px;
 }
+.hero-wrapper .media-about-us {
+  margin: 40px 0;
+}
+.hero-wrapper .media-about-us .media-list {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-wrapper .media-about-us .media-list .media {
+  height: 50px;
+}
 
 .mission-wrapper {
   padding-top: 48px;
@@ -307,9 +325,7 @@ section {
 }
 .product-wrapper .product {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  height: 630px;
   column-gap: 80px;
   row-gap: 48px;
 }
@@ -326,6 +342,7 @@ section {
   line-height: 150%;
   order: 2;
   width: 560px;
+  margin-bottom: 20px;
 }
 .product-wrapper .product .product-characteristics-wrapper {
   order: 3;
