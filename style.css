@@ -526,9 +526,8 @@ section {
   border-bottom: 1px solid #0B0B0B;
 }
 .trust-wrapper .trust .trusters {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
   gap: 32px;
 }
