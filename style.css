@@ -536,8 +536,16 @@ section {
   align-items: center;
   gap: 24px;
 }
-.trust-wrapper .trust .trusters .truster .truster-logo {
+.trust-wrapper .trust .trusters .truster .logo-wrapper {
   height: 126px;
+  width: 126px;
+  aspect-ratio: 1;
+}
+.trust-wrapper .trust .trusters .truster .truster-logo {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .trust-wrapper .trust .trusters .truster .truster-name {
   font-family: Roboto;

@@ -545,9 +545,17 @@ section {
                 display: flex;
                 align-items: center;
                 gap: 24px;
+                
+                .logo-wrapper {
+                    height: 126px;
+                    width: 126px;
+                    aspect-ratio: 1;
+                }
 
                 .truster-logo {
-                    height: 126px;
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain
                 }
 
                 .truster-name {
