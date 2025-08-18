@@ -1,0 +1,610 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tektur:wdth,wght@91.4,400..900&display=swap");
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes menu {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+    background-image: url("./static/icons/close.svg");
+  }
+  100% {
+    transform: rotate(180deg);
+    background-image: url("./static/icons/close.svg");
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  width: 100%;
+}
+
+.content-wrapper {
+  width: 1312px;
+  max-width: 1312px;
+  margin: auto;
+}
+
+.columns {
+  display: flex;
+  gap: 142px;
+}
+
+.title {
+  color: #f2f2f2;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Tektur;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: 1.92px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.button {
+  background: #ff5e2a;
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+.button p {
+  color: #333;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Tektur;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 135%; /* 24.3px */
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+}
+.button.clear {
+  border: 1px solid #ff5e2a;
+  background: none;
+}
+.button.clear p {
+  color: #fff;
+}
+.button.clear img {
+  filter: brightness(100);
+}
+.button.white {
+  border-color: white;
+}
+.button.black p {
+  color: #000000;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: #7C7C7C;
+}
+
+#header {
+  position: fixed;
+  top: 24px;
+  z-index: 10;
+}
+#header .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .menu {
+  color: #e0e0e0;
+  font-feature-settings: "liga" off, "clig" off;
+  /* Text Small | Regular */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  display: flex;
+  gap: 24px;
+}
+#header .menu a {
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+#hero {
+  background-image: url("/static/career/main bg.png");
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  height: 100svh;
+}
+#hero .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background: rgba(30, 30, 30, 0.4);
+}
+#hero .content-wrapper {
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+#hero .hero-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#hero .hero-center h1 {
+  color: #f2f2f2;
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Tektur;
+  font-size: 86px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 94.6px */
+  letter-spacing: 2.58px;
+  text-transform: uppercase;
+}
+#hero .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 61px;
+  margin-top: 60px;
+}
+#hero .hero-comment {
+  color: #f2f2f2;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 22px */
+  position: absolute;
+  left: 0;
+  bottom: 75px;
+  z-index: 2;
+}
+#hero .hero-social {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  right: 0;
+  bottom: 46px;
+  align-items: end;
+  gap: 17px;
+  z-index: 2;
+}
+#hero .hero-social p {
+  color: #f2f2f2;
+  text-align: right;
+  font-feature-settings: "liga" off, "clig" off;
+  /* Text Large | Medium */
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 30px */
+}
+#hero .hero-social .buttons {
+  gap: 18px;
+  margin-top: 0;
+}
+
+#about {
+  padding-top: 135px;
+  padding-bottom: 135px;
+  background-color: #0B0B0B;
+}
+#about .left-col,
+#about .right-col {
+  width: 100%;
+}
+#about .left-col .title {
+  color: #ff5e2a;
+  margin-bottom: 30px;
+}
+#about .left-col .text {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+#about .left-col .text p {
+  color: #f2f2f2;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+#about .right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+#about .right-col .fancy-text .inline {
+  display: flex;
+  align-items: baseline;
+}
+#about .right-col .fancy-text .inline .big-text {
+  color: #f2f2f2;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Tektur;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 88px */
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+#about .right-col .fancy-text .inline .sub-text {
+  color: #7c7c7c;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Tektur;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 26.4px */
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+}
+#about .right-col .fancy-text p {
+  color: #f2f2f2;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+#products {
+  background-color: #0B0B0B;
+  padding-bottom: 130px;
+}
+#products .products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+#products .products .product {
+  position: relative;
+}
+#products .products .product .product-text {
+  color: #0B0B0B;
+  position: absolute;
+  top: 36px;
+  left: 54px;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Tektur;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 26.4px */
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+}
+#products .products .product img {
+  width: 100%;
+  height: 100%;
+}
+
+#proposition {
+  background-color: #0B0B0B;
+  padding-bottom: 130px;
+}
+#proposition .prop-line {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+#proposition .prop-line .prop {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+#proposition .prop-line .hidden {
+  display: none;
+}
+#proposition .prop-line .prop-text {
+  color: #F2F2F2;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Tektur;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 26.4px */
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+}
+#proposition .prop-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 274px 274px;
+  gap: 20px;
+}
+#proposition .prop-cards .prop-card {
+  padding-left: 60px;
+  padding-top: 67px;
+  padding-right: 102px;
+  background-color: white;
+}
+#proposition .prop-cards .prop-card .card-title {
+  color: #333;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Tektur;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 26.4px */
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+#proposition .prop-cards .prop-card .card-text {
+  color: #0B0B0B;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+#resume {
+  padding-bottom: 130px;
+  background-color: #0B0B0B;
+}
+#resume .resume-form {
+  padding: 80px 56px;
+  background-color: #FF5E2A;
+  display: flex;
+  justify-content: space-between;
+}
+#resume .block1 {
+  margin-bottom: 48px;
+  width: 60%;
+}
+#resume .block2 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 60%;
+}
+#resume .text {
+  color: #0B0B0B;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Tektur;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 26.4px */
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+}
+#resume .email {
+  color: #0B0B0B;
+  font-family: Tektur;
+  font-size: var(--Static-Display-Medium-Size, 45px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: var(--Static-Display-Medium-Line-Height, 52px);
+  letter-spacing: var(--Static-Display-Medium-Tracking, 0);
+  text-decoration: none;
+}
+#resume .buttons {
+  display: flex;
+  gap: 15px;
+}
+
+#openings {
+  background-color: #0B0B0B;
+  padding-bottom: 130px;
+}
+#openings .prop-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+#openings .prop-cards .prop-card {
+  padding-left: 60px;
+  padding-top: 67px;
+  padding-right: 102px;
+  padding-bottom: 37px;
+  background-color: white;
+}
+#openings .prop-cards .prop-card .card-title {
+  color: #333;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Tektur;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 26.4px */
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+}
+#openings .prop-cards .prop-card .card-text {
+  color: #0B0B0B;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin-top: 8px;
+}
+#openings .prop-cards .prop-card a {
+  width: -moz-max-content;
+  width: max-content;
+  margin-top: 36px;
+}
+#openings .inline {
+  display: flex;
+  align-items: end;
+  gap: 5px;
+}
+
+#partners .logo-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 135px;
+  margin-bottom: 105px;
+}
+#partners .title {
+  color: #0B0B0B;
+}
+#partners .row1 {
+  display: flex;
+  gap: 80px;
+  margin-bottom: 115px;
+  align-items: center;
+}
+#partners .row2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 165px;
+}
+
+#socials {
+  padding-top: 133px;
+}
+#socials .columns {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 124px;
+}
+#socials .buttons {
+  display: flex;
+  gap: 18px;
+}
+#socials p {
+  color: #333;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Tektur;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 26.4px */
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+}
+#socials .left, #socials .right {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+#cooperation {
+  margin-top: 130px;
+  margin-bottom: 161px;
+}
+#cooperation .title {
+  color: #0B0B0B;
+}
+#cooperation .trusters {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  gap: 32px;
+}
+#cooperation .trusters .truster {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+#cooperation .trusters .truster .logo-wrapper {
+  height: 126px;
+  width: 126px;
+  aspect-ratio: 1;
+}
+#cooperation .trusters .truster .truster-logo {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#cooperation .trusters .truster .truster-name {
+  font-family: Roboto;
+  color: #0B0B0B;
+  font-size: 20px;
+  line-height: 150%;
+  line-height: 30px;
+  width: auto;
+}
+
+#footer {
+  background-color: #0B0B0B;
+  padding-top: 75px;
+  padding-bottom: 200px;
+}
+#footer .over {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+#footer .over .right {
+  display: flex;
+  gap: 200px;
+}
+#footer .over .col {
+  display: flex;
+  flex-direction: column;
+}
+#footer .over .gray {
+  color: #E1DFDD;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+#footer .over a {
+  color: #FFF;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  text-decoration: none;
+}
+#footer .under {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+#footer .under p {
+  color: #E1DFDD;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+#footer .under .icons {
+  display: flex;
+  gap: 16px;
+}
