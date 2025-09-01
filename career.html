@@ -9,7 +9,6 @@
       content="Frontline — це українська MilTech компанія, яка спеціалізується на розробці та виготовленні роботизованих систем для передової."
     />
     <link rel="stylesheet" href="./careers.css" />
-    <script src="/script.js"></script>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -91,20 +90,58 @@
   <body>
     <section id="header">
       <div class="content-wrapper">
-        <a href="/career.html">
+        <a href="/career.html" class="hide-on-mobile">
           <img
             src="/static/career/Logo Frontline.svg"
             alt="Логотип Frontline"
           />
         </a>
-        <div class="menu">
+        <div class="menu hide-on-mobile">
           <a href="#about" class="menu-item">Хто Ми & Продукція</a>
           <a href="#proposition" class="menu-item">Що Пропонуємо</a>
         </div>
-        <a href="/" class="button">
+        <a href="/" class="button hide-on-mobile">
           <p>Повернутись на сайт</p>
           <img src="/static/career/arrow up black.svg" alt="Стрілка вгору" />
         </a>
+        <div class="mobile-menu" id="trigger">
+          <a href="/career.html" class="mobile-logo">
+            <img
+              src="/static/career/Logo Frontline.svg"
+              alt="Логотип Frontline"
+            />
+          </a>
+          <img
+            id="iconTrigger"
+            src="/static/career/Column.svg"
+            alt="Логотип Frontline"
+          />
+        </div>
+        <div class="mobile-overlay" id="target">
+          <div class="links">
+            <a href="#about" class="link">
+              <p>Хто ми & Продукція</p>
+              <img
+                src="/static/career/arrow_up_white.svg"
+                alt="arow pointing up"
+              />
+            </a>
+            <a href="#proposition" class="link">
+              <p>Що пропонуємо</p>
+              <img
+                src="/static/career/arrow_up_white.svg"
+                alt="arow pointing up"
+              />
+            </a>
+            <a href="/" class="button">
+              <p>Повернутись на сайт</p>
+              <img
+                src="/static/career/arrow up black.svg"
+                alt="Стрілка вгору"
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </section>
     <section id="hero">
@@ -471,10 +508,17 @@
     </section>
     <section id="cooperation">
       <div class="content-wrapper">
+        <div class="logo-wrapper">
+          <img
+            src="/static/career/Logo Frontline Black.svg"
+            class="logo"
+            alt="Логотип Frontline"
+          />
+        </div>
         <div class="title">СПІВПРАЦЮЄМО</div>
         <div class="trusters">
           <div class="truster">
-            <div class="logo-wrapper">
+            <div class="tr-logo-wrapper">
               <img
                 src="./static/images/SSO.png"
                 alt="ССО"
@@ -484,7 +528,7 @@
             <p class="truster-name">ССО</p>
           </div>
           <div class="truster">
-            <div class="logo-wrapper">
+            <div class="tr-logo-wrapper">
               <img
                 src="./static/images/47ombr.png"
                 alt="47 ОМБР"
@@ -494,7 +538,7 @@
             <p class="truster-name">47 ОМБР</p>
           </div>
           <div class="truster">
-            <div class="logo-wrapper">
+            <div class="tr-logo-wrapper">
               <img
                 src="./static/images/3oshb.png"
                 alt="3 ОШБ"
@@ -504,7 +548,7 @@
             <p class="truster-name">3 ОШБ</p>
           </div>
           <div class="truster">
-            <div class="logo-wrapper">
+            <div class="tr-logo-wrapper">
               <img
                 src="./static/images/azov.png"
                 alt="АЗОВ"
@@ -514,7 +558,7 @@
             <p class="truster-name">АЗОВ</p>
           </div>
           <div class="truster">
-            <div class="logo-wrapper">
+            <div class="tr-logo-wrapper">
               <img
                 src="./static/images/116_tro.png"
                 alt="141 ОБ ТрО 115 ОБрТрО"
@@ -524,7 +568,7 @@
             <p class="truster-name">141 ОБ ТрО 115 ОБрТрО</p>
           </div>
           <div class="truster">
-            <div class="logo-wrapper">
+            <div class="tr-logo-wrapper">
               <img
                 src="./static/images/36th_Separate_Marine_Brigade.png"
                 alt="36 ОБрМП"
@@ -534,7 +578,7 @@
             <p class="truster-name">36 ОБрМП</p>
           </div>
           <div class="truster">
-            <div class="logo-wrapper">
+            <div class="tr-logo-wrapper">
               <img
                 src="./static/images/116th_Separate_Mechanized_Brigade_SSI_(with_tab).svg.png"
                 alt="116 ОМБр"
@@ -544,7 +588,7 @@
             <p class="truster-name">116 ОМБр</p>
           </div>
           <div class="truster">
-            <div class="logo-wrapper">
+            <div class="tr-logo-wrapper">
               <img
                 src="./static/images/Kraken_Special_Unit_Insignia.png"
                 alt="Кракен"
@@ -558,13 +602,6 @@
     </section>
     <section id="partners">
       <div class="content-wrapper">
-        <div class="logo-wrapper">
-          <img
-            src="/static/career/Logo Frontline Black.svg"
-            class="logo"
-            alt="Логотип Frontline"
-          />
-        </div>
         <div class="title">ПАРТНЕРИ</div>
         <div class="row1">
           <img src="/static/career/partner1.png" alt="Quantum Systems" />
@@ -575,7 +612,7 @@
           <img src="/static/career/partner4.svg" alt="NEZLAMNI" />
           <img src="/static/career/partner5.svg" alt="ANGEL ONE" />
           <img src="/static/career/partner6.svg" alt="Startup Wise Guys" />
-          <img src="/static/career/partner7.svg" alt="THE FREEDOM FUND" />
+          <!-- <img src="/static/career/partner7.svg" alt="THE FREEDOM FUND" /> -->
         </div>
         <div class="separator"></div>
       </div>
@@ -586,10 +623,18 @@
           <div class="left">
             <p>Соцмережі</p>
             <div class="buttons">
-              <a href="https://www.linkedin.com/company/frontline-robots/?viewAsMember=true" target="_blank" class="button black clear">
+              <a
+                href="https://www.linkedin.com/company/frontline-robots/?viewAsMember=true"
+                target="_blank"
+                class="button black clear"
+              >
                 <p>LinkedIn</p>
               </a>
-              <a href="https://www.youtube.com/@FrontLineVictory2024" target="_blank" class="button black clear">
+              <a
+                href="https://www.youtube.com/@FrontLineVictory2024"
+                target="_blank"
+                class="button black clear"
+              >
                 <p>YOUTUBE</p>
               </a>
             </div>
@@ -634,4 +679,32 @@
       </div>
     </section> -->
   </body>
+
+  <script>
+    let trigger = document.querySelector("#trigger");
+    let target = document.querySelector("#target");
+    let icon = document.querySelector("#iconTrigger");
+
+    trigger.addEventListener("click", () => {
+      target.classList.toggle("open");
+      iconCheck();
+    });
+
+    let links = target.querySelectorAll("a");
+
+    links.forEach((e) => {
+      e.addEventListener("click", () => {
+        target.classList.remove("open");
+        iconCheck();
+      });
+    });
+
+    function iconCheck() {
+      if (target.classList.contains("open")) {
+        icon.src = "/static/career/close.svg";
+      } else {
+        icon.src = "/static/career/Column.svg";
+      }
+    }
+  </script>
 </html>
