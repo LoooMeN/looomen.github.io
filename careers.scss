@@ -923,14 +923,13 @@ section {
   }
 
   #header {
-    padding: 0 16px;
     background-color: #000000;
 
     .content-wrapper {
       .mobile-menu {
         width: 100%;
         display: flex;
-        padding: 16px 0;
+        padding: 16px;
         background-color: #000000;
         justify-content: space-between;
         z-index: 3;

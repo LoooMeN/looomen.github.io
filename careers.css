@@ -788,13 +788,12 @@ section {
     width: 45%;
   }
   #header {
-    padding: 0 16px;
     background-color: #000000;
   }
   #header .content-wrapper .mobile-menu {
     width: 100%;
     display: flex;
-    padding: 16px 0;
+    padding: 16px;
     background-color: #000000;
     justify-content: space-between;
     z-index: 3;
