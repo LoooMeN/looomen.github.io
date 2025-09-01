@@ -23,6 +23,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 section {
@@ -89,6 +90,15 @@ section {
 .button.black p {
   color: #000000;
 }
+.button.blacker {
+  background-color: black;
+}
+.button.blacker p {
+  color: white;
+}
+.button.blacker img {
+  filter: brightness(100);
+}
 
 .separator {
   width: 100%;
@@ -98,8 +108,10 @@ section {
 
 #header {
   position: fixed;
-  top: 24px;
+  top: 0;
   z-index: 10;
+  padding: 18px 0;
+  background-color: #000000;
 }
 #header .content-wrapper {
   display: flex;
@@ -376,16 +388,10 @@ section {
   background-color: #FF5E2A;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
-#resume .block1 {
-  margin-bottom: 48px;
-  width: 60%;
-}
-#resume .block2 {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  width: 60%;
+#resume .left, #resume .right {
+  width: 45%;
 }
 #resume .text {
   color: #0B0B0B;
@@ -408,9 +414,21 @@ section {
   letter-spacing: var(--Static-Display-Medium-Tracking, 0);
   text-decoration: none;
 }
+#resume .left .button {
+  margin-top: 36px;
+}
 #resume .buttons {
   display: flex;
   gap: 15px;
+  margin-top: 38px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+#resume .buttons .button {
+  padding: 12px 24px;
+  height: -moz-max-content;
+  height: max-content;
+  flex-shrink: 0;
 }
 
 #openings {
@@ -496,7 +514,7 @@ section {
   display: flex;
   gap: 18px;
 }
-#socials p {
+#socials p, #socials a {
   color: #333;
   font-feature-settings: "liga" off, "clig" off;
   font-family: Tektur;
@@ -506,11 +524,16 @@ section {
   line-height: 110%; /* 26.4px */
   letter-spacing: 0.72px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 #socials .left, #socials .right {
   display: flex;
   flex-direction: column;
   gap: 28px;
+}
+#socials .right div {
+  display: flex;
+  flex-direction: column;
 }
 
 #cooperation {
